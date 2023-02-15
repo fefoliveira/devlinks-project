@@ -87,7 +87,7 @@ body * {
 }
 
 #switch button:hover {
-  outline: 8px solid var(--highlight-color)
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -151,7 +151,13 @@ ul li a:hover {
 }
 
 footer a:hover {
-  color: rgb(126, 184, 238);
+  color: rgb(125, 185, 238);
+  transition: 0.2s;
+}
+
+.light footer a:hover {
+  color: rgb(50, 130, 210);
+  transition: 0.2s;
 }
 
 footer {
@@ -160,14 +166,18 @@ footer {
   font-size: 18px;
 }
 
-@media (min-width: 700px) {
-    :root {
-      --bg-url: url(./assets/bg-desktop.jpg)
-    }
+.light footer {
+  font-weight: bold;
+}
 
-    .light {
-      --bg-url: url(./assets/bg-desktop-light.jpg)
-    }
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
 
 @keyframes slide-in {
